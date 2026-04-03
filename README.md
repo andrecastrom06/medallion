@@ -53,7 +53,7 @@ Exibição em tela dos Melhores e Piores Produtos e Vendedores, utilizando um cr
 ## ⚙️ Orquestração (Databricks Workflows)
 Todo o pipeline foi automatizado utilizando o Databricks Jobs (Workflows).
 
-<img width="1915" height="912" alt="Captura de tela 2026-04-02 223558" src="https://github.com/user-attachments/assets/7bff7526-4c9a-43e2-b0f7-a08864bc688f" />
+<img width="1919" height="962" alt="Captura de tela 2026-04-03 125255" src="https://github.com/user-attachments/assets/f2573156-c8df-443e-b486-0391c4018711" />
 
 Estrutura do Job: As tarefas foram configuradas de forma sequencial com dependências estritas: Landing_Bronze ➔ Bronze_Silver ➔ Silver_Gold.
 
