@@ -69,3 +69,5 @@ Silver.ipynb: Transformações, limpezas e aplicação de regras de negócio.
 Gold.ipynb: Gerações das agregações de negócio e queries de análise de Top 5.
 
 Medalhão JOB.yaml: Arquivo de deploy do workflow do Databricks.
+
+Medallion Pipeline.png: Foto do Cron Job após execução bem sucedida.
