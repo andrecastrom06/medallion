@@ -1,7 +1,7 @@
 resources:
   jobs:
     New_Job_Apr_03_2026_02_49_PM:
-      name: New Job Apr 03, 2026, 02:49 PM
+      name: Meddalion Pipeline
       schedule:
         quartz_cron_expression: 0 0 13 * * ?
         timezone_id: America/Recife
