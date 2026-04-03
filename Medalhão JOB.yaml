@@ -9,19 +9,19 @@ resources:
       tasks:
         - task_key: Landing_Bronze
           notebook_task:
-            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Bronze
+            notebook_path: /Workspace/desafio_Engenharia_Dados/Bronze
             source: WORKSPACE
         - task_key: Bronze_Silver
           depends_on:
             - task_key: Landing_Bronze
           notebook_task:
-            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Silver
+            notebook_path: /Workspace/desafio_Engenharia_Dados/Silver
             source: WORKSPACE
         - task_key: Silver_Gold
           depends_on:
             - task_key: Bronze_Silver
           notebook_task:
-            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Gold
+            notebook_path: /Workspace/desafio_Engenharia_Dados/Gold
             source: WORKSPACE
       queue:
         enabled: true
