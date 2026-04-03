@@ -1,9 +1,9 @@
 resources:
   jobs:
-    Medalhão_JOB:
-      name: Medalhão JOB
+    New_Job_Apr_03_2026_02_49_PM:
+      name: New Job Apr 03, 2026, 02:49 PM
       schedule:
-        quartz_cron_expression: 57 0 13 * * ?
+        quartz_cron_expression: 34 0 13 * * ?
         timezone_id: America/Recife
         pause_status: UNPAUSED
       tasks:
