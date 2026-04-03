@@ -1,0 +1,28 @@
+resources:
+  jobs:
+    Medalhão_JOB:
+      name: Medalhão JOB
+      schedule:
+        quartz_cron_expression: 57 0 13 * * ?
+        timezone_id: America/Recife
+        pause_status: UNPAUSED
+      tasks:
+        - task_key: Landing_Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Bronze
+            source: WORKSPACE
+        - task_key: Bronze_Silver
+          depends_on:
+            - task_key: Landing_Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Silver
+            source: WORKSPACE
+        - task_key: Silver_Gold
+          depends_on:
+            - task_key: Bronze_Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/andrecastro@rayconsulting.com.br/Gold
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
