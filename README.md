@@ -19,8 +19,6 @@ Responsável por receber os dados em seu formato original, garantindo o históri
 Fontes de Dados: Arquivos CSV do dataset Olist carregados como Volumes no Databricks e dados da API do Banco Central.
 Transformações: Nenhuma alteração de tipagem, apenas a adição da coluna timestamp_ingestion em todas as tabelas para rastreabilidade.
 
-Desafio Superado (API BCB): Devido a limitações de NAT Gateway (acesso à internet) em instâncias gratuitas/comunitárias do Databricks, a requisição direta à API do Banco Central via notebook falhou. A solução aplicada foi extrair o JSON localmente via script Python e subi-lo como volume (cotacao_dolar.json), processando-o com sucesso via PySpark no notebook.
-
 ### 🥈 Camada Silver (Limpeza e Padronização)
 Responsável por transformar os dados brutos em um formato padronizado, limpo e tipado, pronto para relacionamentos.
 
