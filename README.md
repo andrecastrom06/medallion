@@ -51,7 +51,7 @@ Exibição em tela dos Melhores e Piores Produtos e Vendedores, utilizando um cr
 ## ⚙️ Orquestração (Databricks Workflows)
 Todo o pipeline foi automatizado utilizando o Databricks Jobs (Workflows).
 
-<img width="1919" height="904" alt="Medallion Pipeline" src="https://github.com/user-attachments/assets/7c2f27e3-49f8-4d29-8e7a-2285ecae1ec1" />
+<img width="1919" height="913" alt="Medallion Pipeline" src="https://github.com/user-attachments/assets/8c665f74-264d-4df0-bd7f-e9f22ef42df2" />
 
 Estrutura do Job: As tarefas foram configuradas de forma sequencial com dependências estritas: Landing_Bronze ➔ Bronze_Silver ➔ Silver_Gold.
 
@@ -62,12 +62,12 @@ Boas Práticas: Os notebooks foram configurados com tolerância a mudanças de e
 O arquivo de configuração exportado (Medalhão JOB.yaml) e a evidência de execução com sucesso estão presentes neste repositório.
 
 ## 📂 Estrutura do Repositório
-Bronze.ipynb: Código PySpark para ingestão e criação do banco de dados Bronze.
+Atividade_land_to_bronze.ipynb: Código PySpark para ingestão e criação do banco de dados Bronze consumindo arquivos csv e API do Banco Central do Brasil.
 
-Silver.ipynb: Transformações, limpezas e aplicação de regras de negócio.
+Atividade_bronze_to_silver.ipynb: Transformações, limpezas e aplicação de regras de negócio.
 
-Gold.ipynb: Gerações das agregações de negócio e queries de análise de Top 5.
+Atividade_silver_to_gold.ipynb: Gerações das agregações de negócio e queries para análises.
 
-Medalhão JOB.yaml: Arquivo de deploy do workflow do Databricks.
+Medallion Pipeline.yaml: Arquivo de deploy do workflow do Databricks.
 
 Medallion Pipeline.png: Foto do Cron Job após execução bem sucedida.
